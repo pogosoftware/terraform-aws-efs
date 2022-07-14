@@ -79,10 +79,10 @@ variable "mount_target_file_system_id" {
   type        = string
 }
 
-variable "mount_target_subnet_id" {
-  default     = null
-  description = "Required if `create_mount_target` is set to `true`. The ID of the subnet to add the mount target in"
-  type        = string
+variable "mount_target_subnet_ids" {
+  default     = []
+  description = "Required if `create_mount_target` is set to `true`. The IDs of the subnet to add the mount target in"
+  type        = list(string)
 }
 
 variable "mount_target_ip_address" {
