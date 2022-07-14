@@ -43,7 +43,7 @@ No modules.
 | <a name="input_mount_target_file_system_id"></a> [mount\_target\_file\_system\_id](#input\_mount\_target\_file\_system\_id) | Required if `create_file_system` is set to `false`. The ID of the file system for which the mount target is intended | `string` | `null` | no |
 | <a name="input_mount_target_ip_address"></a> [mount\_target\_ip\_address](#input\_mount\_target\_ip\_address) | The address (within the address range of the specified subnet) at which the file system may be mounted via the mount target | `string` | `null` | no |
 | <a name="input_mount_target_security_groups"></a> [mount\_target\_security\_groups](#input\_mount\_target\_security\_groups) | A list of up to 5 VPC security group IDs (that must be for the same VPC as subnet specified) in effect for the mount target | `list(string)` | `null` | no |
-| <a name="input_mount_target_subnet_id"></a> [mount\_target\_subnet\_id](#input\_mount\_target\_subnet\_id) | Required if `create_mount_target` is set to `true`. The ID of the subnet to add the mount target in | `string` | `null` | no |
+| <a name="input_mount_target_subnet_ids"></a> [mount\_target\_subnet\_ids](#input\_mount\_target\_subnet\_ids) | Required if `create_mount_target` is set to `true`. The IDs of the subnet to add the mount target in | `list(string)` | `[]` | no |
 
 ## Outputs
 
